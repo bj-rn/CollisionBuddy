@@ -1,6 +1,6 @@
-﻿using PrimitiveBuddy;
-using Microsoft.Xna.Framework;
-using System;
+﻿
+using Stride.Core.Mathematics;
+
 
 namespace CollisionBuddy
 {
@@ -174,10 +174,10 @@ namespace CollisionBuddy
 		/// </summary>
 		/// <param name="prim"></param>
 		/// <param name="color"></param>
-		public void Draw(IPrimitive prim, Color color)
-		{
-			prim.Circle(Pos, Radius, color);
-		}
+		//public void Draw(IPrimitive prim, Color color)
+		//{
+		//	prim.Circle(Pos, Radius, color);
+		//}
 
 		#endregion //Methods
 	}

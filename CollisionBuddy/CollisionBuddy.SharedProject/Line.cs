@@ -1,7 +1,5 @@
-﻿using PrimitiveBuddy;
-using Microsoft.Xna.Framework;
-using System.Collections.Generic;
-using Vector2Extensions;
+﻿using Stride.Core.Mathematics;
+using VL.Boids;
 
 namespace CollisionBuddy
 {
@@ -243,16 +241,16 @@ namespace CollisionBuddy
 		/// </summary>
 		/// <param name="prim"></param>
 		/// <param name="color"></param>
-		public void Draw(IPrimitive prim, Color color)
-		{
-			//draw the line
-			prim.Line(Start, End, color);
+		//public void Draw(IPrimitive prim, Color color)
+		//{
+		//	//draw the line
+		//	prim.Line(Start, End, color);
 
-			//draw the normal
-			Vector2 normalStart = Center();
-			Vector2 normalEnd = Center() + (Normal * 10.0f);
-			prim.Line(normalStart, normalEnd, color);
-		}
+		//	//draw the normal
+		//	Vector2 normalStart = Center();
+		//	Vector2 normalEnd = Center() + (Normal * 10.0f);
+		//	prim.Line(normalStart, normalEnd, color);
+		//}
 
 		#endregion //Methods
 	}
